@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 0 20px black; 
+    background-color: maroon;
 
 
 }
@@ -52,4 +53,14 @@ h1 {
 
 #result {
     margin-bottom: 10px;
+}
+
+.cardimage {
+    width: 80px;
+    margin: 1px;
+}
+
+.card-container {
+    display: flex;
+
 }

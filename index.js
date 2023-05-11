@@ -10,7 +10,7 @@ let cardsEl = document.getElementById("cards-el");
 //player object
 let player = {
     name: "Your Chips",
-    chips: 145
+    chips: 1000
 }
 
 let playerEl = document.getElementById("player-el");
