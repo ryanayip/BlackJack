@@ -6,6 +6,21 @@ let outcome = document.getElementById("result");
 let message = "";
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
+const cardArea = document.getElementById("card-area");
+//card image tie ins
+//let twoClubs = document.getElementById("cardImageId");
+//twoClubs.src = "/sources/cards/2_of_clubs.png";
+
+//card adder!
+//creating the card element first
+const newCardPic = document.createElement("img");
+newCardPic.setAttribute("class","cardimage")
+//adding attributes to the card
+newCardPic.src = "/sources/cards/3_of_clubs.png";
+//adding card to HTML
+cardArea.appendChild(newCardPic);
+
+
 
 //player object
 let player = {
@@ -24,7 +39,7 @@ function renderGame() {
     //cardsEl.innerText = "Cards: " + allCards;
     //added forLoop
     cardsEl.innerText = "Cards: "
-
+    //Need to tie card images to random numbers to generate pics insteads numbers
     for (let i = 0; i < allCards.length; i++) {
         cardsEl.textContent += allCards[i] + " "
     }
