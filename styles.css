@@ -18,17 +18,17 @@ h1 {
     background-color: darkgreen;
     background-size: cover;
     width: auto;
-    height: auto;
+    height: 680px;
     flex-direction: column;
     color: white;
     font-size: large;
     font-weight: bolder;
     border: solid burlywood 10px;
     border-radius: 20px;
-    padding: 40px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
-   padding: 60px;
+
 }
 
 .btn {
@@ -56,11 +56,14 @@ h1 {
 }
 
 .cardimage {
-    width: 80px;
+    width: 70px;
     margin: 1px;
 }
 
 .card-container {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }

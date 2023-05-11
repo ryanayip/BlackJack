@@ -11,14 +11,19 @@ const cardArea = document.getElementById("card-area");
 //let twoClubs = document.getElementById("cardImageId");
 //twoClubs.src = "/sources/cards/2_of_clubs.png";
 
-//card adder!
+function addThreeClubs() {
+
+    //CARD ADDER
 //creating the card element first
 const newCardPic = document.createElement("img");
+//adding class attribute to the card
 newCardPic.setAttribute("class","cardimage")
-//adding attributes to the card
+//assign image source to card
 newCardPic.src = "/sources/cards/3_of_clubs.png";
 //adding card to HTML
 cardArea.appendChild(newCardPic);
+
+}
 
 
 
@@ -35,26 +40,26 @@ playerEl.textContent = player.name + ": $" + player.chips;
 
 function renderGame() {
     
-    //cardsEl.innerText = "Cards: " + allCards[0] + ", " + allCards[1];
-    //cardsEl.innerText = "Cards: " + allCards;
     //added forLoop
     cardsEl.innerText = "Cards: "
     //Need to tie card images to random numbers to generate pics insteads numbers
     for (let i = 0; i < allCards.length; i++) {
         cardsEl.textContent += allCards[i] + " "
     }
+    //Adds card images (broken)
+    for (let i = 0; i < allCards.length; i++) {
+        addThreeClubs();
+    }
     
+    //Win or Lose logic
     sumEl.innerText = "Sum: " + sum;
     if (sum < 21) {
-        //outcome.innerText = "Do you want to draw a new card?";
         message = "Do you want to draw a new card?";
     } else if (sum === 21) {
-        //outcome.innerText = "Hooray! Blackjack!";
         hasBlackJack = true;
         isAlive = false;
         message = "Hooray! Blackjack!";
     } else {
-        //outcome.innerText = "You lose";
         isAlive = false;
         message = "You lose";
     }
@@ -75,6 +80,7 @@ function newCard() {
 function startGame() {
     if (isAlive === false) {
         isAlive = true;
+        cardArea.innerHTML = "";
         let firstCard = getRandomCard();
         let secondCard = getRandomCard();
         allCards = [firstCard, secondCard]
