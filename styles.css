@@ -13,11 +13,11 @@ h1 {
 .main {
     display: flex;
     text-align: center;
-    margin: 200px auto 0 auto;
+    margin: auto;
     background-color: darkgreen;
     background-size: cover;
-    width: 500px;
-    height: 300px;
+    width: auto;
+    height: auto;
     flex-direction: column;
     color: white;
     font-size: large;

@@ -7,6 +7,16 @@ let message = "";
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
+//player object
+let player = {
+    name: "Your Chips",
+    chips: 145
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
+
 
 function renderGame() {
     
