@@ -38,25 +38,24 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === false) {
-        return
+    if (isAlive === true) {
+        let drawCard = getRandomCard();
+        sum += drawCard;
+        allCards.push(drawCard);
+        renderGame();
     } 
-    let drawCard = getRandomCard();
-    sum += drawCard;
-    allCards.push(drawCard);
-    renderGame();
 }
 
+
 function startGame() {
-    if (isAlive === true) {
-        return
+    if (isAlive === false) {
+        isAlive = true;
+        let firstCard = getRandomCard();
+        let secondCard = getRandomCard();
+        allCards = [firstCard, secondCard]
+        sum = firstCard + secondCard
+        renderGame();
     } 
-    isAlive = true;
-    let firstCard = getRandomCard();
-    let secondCard = getRandomCard();
-    allCards = [firstCard, secondCard]
-    sum = firstCard + secondCard
-    renderGame();
 }
 
 function getRandomCard() {
