@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 20px black; 
+
+
+}
+
+h1 {
+    color: goldenrod;
+    
+}
+
+.main {
+    display: flex;
+    text-align: center;
+    margin: 200px auto 0 auto;
+    background-color: darkgreen;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    flex-direction: column;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border: solid burlywood 10px;
+    border-radius: 20px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+   padding: 60px;
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 30px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    color: white;
+    margin: 5px;
+    
+}
+
+.btn:hover {
+    background-color: darkgoldenrod;
+}
+
+.btn:active {
+    background-color: rgb(126, 92, 7);
+}
+
+#result {
+    margin-bottom: 10px;
+}
