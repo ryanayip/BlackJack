@@ -40,7 +40,7 @@ function renderGame() {
             cardValue = 1;
         }
         sum += cardValue;
-        cardsHTML += "<img class='cardimage' src='/sources/cards/" + cardValue + "_of_" + getSuit(i) + ".png'>";
+        cardsHTML += "<img class='cardimage' src='./sources/cards/" + cardValue + "_of_" + getSuit(i) + ".png'>";
     }
     // Handle ace cards
     while (aceCount > 0 && sum + 10 <= 21) {
